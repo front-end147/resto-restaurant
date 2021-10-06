@@ -26,7 +26,7 @@ window.addEventListener("scroll", () => {
   section.forEach(sec => {
     let top = window.scrollY;
     let height = sec.offsetHeight;
-    let offset = sec.offsetTop;
+    let offset = sec.offsetTop - 100;
     let secId = sec.getAttribute("id");
 
     if (top >= offset && top < offset + height) {
